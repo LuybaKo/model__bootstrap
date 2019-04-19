@@ -1,0 +1,27 @@
+.statistic {
+    @extend .word-press;
+}
+
+.statistic-links {
+    .statistic-links__title {
+        margin-top: 10px;
+        font-family: $text-font;
+        font-size: 48px;
+        font-weight: 200;
+        color: #fff;
+    }
+
+    .statistic-links__paragraph {
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: $color-hover;
+    }
+
+    .statistic-links__line {
+        margin: 0 auto;
+        margin-top: 25px;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+    }
+}

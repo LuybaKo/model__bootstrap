@@ -1,0 +1,36 @@
+.word-press {
+    padding: 45px 0;
+    background-image: linear-gradient(to right, #221c1a, #4e3427);
+}
+
+.word-press-title {
+    font-family: $main-font;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: #fff;
+
+    @media (max-width: 992px) {
+        font-size: 24px;
+    }
+
+    span {
+        color: $color-hover;
+    }
+}
+
+.word-press-paragraph {
+    margin: 0;
+}
+.word-press_info{
+    @media (max-width: 996px) {
+        text-align: center;
+    }
+}
+.word-press_button {
+    text-align: right;
+
+    @media (max-width: 996px) {
+        margin-top: 30px;
+        text-align: center;
+    }
+}

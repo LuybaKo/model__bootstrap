@@ -1,0 +1,30 @@
+.order-for-mobile {
+    padding-top: 40px;
+    background: url(../img/hand-with-mobile.jpg) no-repeat bottom center;
+    @media (max-width: 995px) {
+        background-image: none;
+        background-color: $color-bg;
+    }
+}
+
+.list-group {
+    margin-bottom: 200px;
+    @media (max-width: 995px) {
+        margin-bottom: 50px;
+        list-style-type: none;
+        list-style-position: outside;
+    }
+    .list-group-item {
+        @extend .g-title__paragraph;
+        background-color: $color-bg;
+        border: none;
+        
+        img {
+            padding-right: 30px;
+        }
+    }
+    .list-group-item:before{
+        content: url(../img/arrow.jpg);
+    }
+
+}

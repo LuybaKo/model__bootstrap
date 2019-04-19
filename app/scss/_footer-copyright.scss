@@ -1,0 +1,39 @@
+.footer-copyright {
+    padding: 40px 0;
+    background-color: #111;
+
+}
+
+.copyrigft-links {
+    padding: 0 10px;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 13px;
+    text-transform: capitalize;
+    border-right: 1px solid $color-content;
+
+    span {
+        color: #959595;
+    }
+
+    a {
+        color: $color-content;
+    }
+
+    a:hover {
+        color: $color-hover;
+    }
+}
+
+.copyrigft-links:first-child {
+    padding-left: 0px;
+}
+
+.copyrigft-links:last-child {
+    padding-right: 0px;
+    border-right: none;
+}
+
+.copyrigft-links:nth-child(4) {
+    border-right: none;
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$main-font: 'Raleway',
+sans-serif;
+$text-font: 'Montserrat',
+sans-serif;
+
+$color-content: #555555;
+$color-hover: #c7b299;
+$color-bg: #fbfaf8;
+
+body {
+    font-family: $text-font;
+    font-size: 14px;
+    color: $color-content;
+}
+
+a {
+    transition: 0.3s ease-out;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.g-button {
+    padding: 15px 30px;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $color-hover;
+    border-bottom: 2px solid #736357;
+    border-radius: 5px;
+    @media (max-width: 768px){
+        padding: 5px 10px;
+        font-size: 8px;
+    }
+}
+
+.g-title{
+    margin-top: 80px;
+    margin-bottom: 35px;
+    @media (max-width: 992px) {
+        margin-top: 50px;
+    }
+
+    .g-title__main{
+        margin-bottom: 20px;
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 30px;
+        @media (max-width: 992px) {
+            font-size: 24px;
+        }
+    }
+    .g-title__paragraph{
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+@import "header.scss";
+@import "service-links.scss";
+@import "introduction.scss";
+@import "word-press-theme";
+@import "latest-project";
+@import "video-section";
+@import "mobile.scss";
+@import "statistic.scss";
+@import "posts.scss";
+@import "partners.scss";
+@import "footer-content.scss";
+@import "footer-copyright.scss";
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

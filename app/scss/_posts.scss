@@ -1,0 +1,103 @@
+.posts {
+    .card {
+        .card-icons {
+            overflow: hidden;
+            margin: 20px;
+            color: #fff;
+            background-color: #363636;
+            border-radius: 5px;
+
+            .date {
+                padding: 5px 10px;
+                font-size: 24px;
+                font-weight: 300;
+            }
+
+            .month {
+                padding: 5px 10px;
+                font-family: 'Roboto', sans-serif;
+                background-color: #252525;
+            }
+        }
+
+        .card-body {
+            background-color: #fff;
+
+            .card-title {
+                font-weight: 300;
+                color: $color-content;
+            }
+        }
+    }
+}
+
+.posts {
+    .card {
+        .card-body:hover {
+            background-color: #362f2d;
+        }
+    }
+
+    .card:hover .date {
+        background-color: $color-hover;
+    }
+
+    .card:hover .month {
+        background-color: #a48d72;
+    }
+
+    .card:hover .card-title {
+        color: $color-hover;
+    }
+
+    .card:hover .card-text {
+        color: #fff;
+    }
+
+
+}
+
+._card-info {
+    color: $color-hover;
+
+    span {
+        margin-right: 10px;
+        text-transform: capitalize;
+    }
+
+}
+
+._card-info:hover {
+    color: #a48d72;
+}
+
+.arrow-nav {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+
+    .arrow-left,
+    .arrow-right {
+        margin: 5px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $color-content;
+        border-radius: 50%;
+    }
+}
+.arrow-nav{
+    .arrow-left:hover{
+        border: 1px solid $color-hover;
+        cursor: pointer;
+    }
+    .arrow-left:hover i{
+        color: $color-hover;
+    }
+    .arrow-right:hover{
+        border: 1px solid $color-hover;
+        cursor: pointer;
+    }
+    .arrow-right:hover i{
+        color: $color-hover;
+    }
+}

@@ -1,0 +1,125 @@
+// 1 column
+.footer-content {
+    padding: 80px 0;
+    background-color: #191919;
+
+    .navbar-brand {
+        font-family: $main-font;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    ._card-info {
+        color: #fff;
+    }
+
+    ._card-info:hover {
+        color: $color-hover;
+    }
+}
+
+.some-text {
+    padding: 15px 0;
+    font-weight: 300;
+}
+
+// global title
+.title-article {
+    padding-top: 15px;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
+
+// 2 column
+.post-link {
+    font-family: $text-font;
+    font-weight: 300;
+
+    .date-post {
+        padding-top: 15px;
+        font-size: 12px;
+        color: #363636;
+    }
+
+    .post-text {
+        padding-bottom: 15px;
+        color: $color-content;
+    }
+}
+
+.post-link:hover {
+    .date-post {
+        color: #fff;
+    }
+
+    .post-text {
+        color: $color-hover;
+    }
+}
+
+.post-link:nth-child(3) .date-post {
+    border-top: 1px solid $color-content;
+}
+
+.post-link:nth-child(3) .post-text {
+    border-bottom: 1px solid $color-content;
+}
+
+// 3 column
+.twitter-post {
+    @extend .post-link;
+    padding: 15px 0;
+}
+
+.twitter-post:nth-child(3) {
+    border-top: 1px solid $color-content;
+    border-bottom: 1px solid $color-content;
+}
+
+.twitter-post__time {
+    font-size: 12px;
+    color: #363636;
+}
+
+.twitter-post__text {
+    span {
+        color: #959595;
+    }
+}
+
+// 4column
+.widget {
+    margin-top: 15px;
+}
+
+.widget-img {
+    margin-bottom: 10px;
+}
+
+.widget-img:first-child {
+    margin-right: 10px;
+    width: 130px;
+    height: 100px;
+    background: url(../img/widget-1.jpg) no-repeat center center;
+}
+
+.widget-img:nth-child(2) {
+    width: 130px;
+    height: 100px;
+    background: url(../img/widget-2.jpg) no-repeat center center;
+}
+
+.widget-img:nth-child(3) {
+    margin-right: 10px;
+    width: 130px;
+    height: 100px;
+    background: url(../img/widget-3.jpg) no-repeat center center;
+}
+
+.widget-img:last-child {
+    width: 130px;
+    height: 100px;
+    background: url(../img/widget-4.jpg) no-repeat center center;
+}

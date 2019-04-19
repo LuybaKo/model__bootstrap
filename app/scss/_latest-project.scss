@@ -1,0 +1,81 @@
+.nav {
+    margin-bottom: 40px;
+}
+
+.latest-project .nav-link {
+    margin: 0 5px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: $color-content;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    @media (max-width: 768px) {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+}
+
+.latest-project .nav-link:hover {
+    color: #fff;
+    background-color: $color-hover;
+    cursor: pointer;
+}
+
+.card-deck .card {
+    margin-bottom: 30px;
+
+    .card-body {
+        background-color: $color-bg;
+
+        .card-title {
+            font-family: $main-font;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: $color-hover;
+        }
+
+        .card-text {
+            font-family: $text-font;
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: capitalize;
+            color: $color-content;
+        }
+    }
+}
+
+.latest-project {
+    .card:hover .card-title {
+        color: #fff;
+    }
+
+    .card:hover .card-text {
+        color: $color-hover;
+    }
+
+    .card:hover .card__icons {
+        visibility: visible;
+    }
+
+    .card:hover .card-body {
+        background-color: #362f2d;
+    }
+}
+
+.card__icons {
+    left: 38%;
+    top: 30%;
+    visibility: hidden;
+
+    .fas {
+        margin: 0 10px;
+        font-size: 28px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .fas:hover {
+        color: $color-hover;
+    }
+}

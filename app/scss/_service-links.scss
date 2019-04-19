@@ -1,0 +1,29 @@
+.service {
+    margin-top: 80px;
+
+    .service-links-hover {
+        color: $color-content;
+
+    }
+
+    .service-links__title {
+        margin: 22px auto 15px;
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .service-links__line {
+        width: 70px;
+        height: 2px;
+        margin: 0 auto;
+    }
+}
+
+.service-links-hover:hover .service-links__title {
+    color: $color-hover;
+}
+
+.service-links-hover:hover .service-links__line {
+    background-color: $color-hover;
+}
